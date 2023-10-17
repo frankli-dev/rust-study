@@ -7,10 +7,11 @@ rustup
 main
 
 ### 3. Let's say you have the following program in a file hello.rs:
-
+```
 fn main() {
   println!("Hello world!");
 }
+```
 Say you then run the command rustc hello.rs from the command-line. Which statement best describes what happens next?
 
 Response
