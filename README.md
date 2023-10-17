@@ -15,7 +15,7 @@ fn main() {
 Say you then run the command rustc hello.rs from the command-line. Which statement best describes what happens next?
 
 Response
-[ ] rustc generates a binary executable named hello
-[ ] rustc reformats hello.rs according to the Rust style guide
-[ ] rustc will print an error because this is an invalid program
-[ ] rustc executes the program and prints out Hello world!
+- [x] rustc generates a binary executable named hello
+- [ ] rustc reformats hello.rs according to the Rust style guide
+- [ ] rustc will print an error because this is an invalid program
+- [ ] rustc executes the program and prints out Hello world!
