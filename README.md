@@ -27,3 +27,26 @@ Response
 - [ ] Cargo downloads and builds any dependencies of the project
 - [ ] Cargo executes the project's binary
 - [ ] Cargo builds the project into a binary in the target/debug directory
+
+### 5. Which statement best describes what it means if a variable x is immutable?
+Response
+- [ ] After being defined, x can be changed at most once.
+- [ ] x is stored in the immutable region of memory.
+- [x] x cannot be changed after being assigned a value.
+- [ ] You cannot create a reference to x.
+
+### 6. What is the keyword used after let to indicate that a variable can be mutated?
+mut
+
+### 7. Determine whether the program will pass the compiler. If it passes, write the expected output of the program if it were executed.
+```
+fn main() {
+  let x = 1;
+  println!("{x}");
+  x += 1;
+  println!("{x}");
+}
+```
+
+- [ ] This program:  DOES compile
+- [x] This program:  does NOT compile
