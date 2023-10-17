@@ -50,3 +50,32 @@ fn main() {
 
 - [ ] This program:  DOES compile
 - [x] This program:  does NOT compile
+
+### 8. Which of the following statements is correct about the difference between using let and const to declare a variable?
+Response
+- [ ] A const can only be assigned to a literal, not an expression involving computation
+- [ ] They are just different syntaxes for declaring variables with the same semantics
+- [ ] The compiler will error if a const variable's name is not using UPPER_SNAKE_CASE
+- [x] const can be used in the global scope, and let can only be used in a function
+
+### 9. Determine whether the program will pass the compiler. If it passes, write the expected output of the program if it were executed.
+```
+fn main() {
+  let mut x: u32 = 1;
+  {
+    let mut x = x;
+    x += 2;
+  }
+  println!("{x}");
+}
+```
+1
+### 10. Determine whether the program will pass the compiler. If it passes, write the expected output of the program if it were executed.
+```
+fn main() {
+  let mut x: u32 = 1;
+  x = "Hello world";
+  println!("{x}");
+}
+```
+Not compile
