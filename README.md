@@ -19,3 +19,11 @@ Response
 - [ ] rustc reformats hello.rs according to the Rust style guide
 - [ ] rustc will print an error because this is an invalid program
 - [ ] rustc executes the program and prints out Hello world!
+
+### 4. Say you just downloaded a Cargo project, and then you run cargo run at the command-line. Which statement is NOT true about what happens next?
+
+Response
+- [x] Cargo watches for file changes and re-executes the binary on a change
+- [ ] Cargo downloads and builds any dependencies of the project
+- [ ] Cargo executes the project's binary
+- [ ] Cargo builds the project into a binary in the target/debug directory
