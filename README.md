@@ -159,3 +159,70 @@ fn main() {
   println!("{y}");
 }
 ```
+
+### 20. rue/false: this code will terminate (that is, it will not loop forever).
+```
+fn main() {
+    let mut x = 0;
+    'a: loop {
+        x += 1;
+        'b: loop {
+            if x > 10 {
+                continue 'a;
+            } else {
+                break 'b;
+            }      
+        }
+        break;       
+    }
+}
+```
+
+### 21. Determine whether the program will pass the compiler. If it passes, write the expected output of the program if it were executed.
+```
+fn main() {
+    let a = [5; 10];
+    let mut sum = 0;
+    for x in a {
+        sum += x;
+    }
+    println!("{sum}");
+}
+```
+
+### 22. Convert the following javascript code to Rust
+```
+var climb = (n,cnt) => {
+    const t=Array(n+1).fill(0);
+    t[0]=1;
+    t[1]=2;
+    if (n<=2) return n;
+    for(let i=2;i<=n;i++) {
+        t[i]=t[i-1]+t[i-2];
+    }
+    return t[n-1];
+};
+var climbStairs = function(n) {
+    return climb(n,0);
+};
+```
+
+### 23. Convert the following javascript code to Rust
+```
+var mySqrt = function(x) {
+    let left = 0;
+    let right = x;
+    while(left <= right) {
+        const mid = Math.floor((left+right)/2);
+        if(mid*mid <= x && (mid+1) * (mid+1) > x) {
+            return mid;
+        }
+        else if(mid*mid < x) {
+            left = mid + 1;
+        }
+        else {
+            right = mid - 1;
+        }
+    }
+};
+```
